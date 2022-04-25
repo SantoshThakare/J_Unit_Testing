@@ -23,16 +23,14 @@ def vending_machine(amount):
     while amount > 1:
         if amount/list1[note] >= 1:
             a = amount/list1[note]
-            print("{} {} Rupee Notes".format(math.floor(a), list1[note]))
+            print("Count {} and {} Rupee Notes".format(math.floor(a), list1[note]))
             amount = amount - math.floor(a) * list1[note]
             count = count + math.floor(a)
 
         else:
             note += 1
 
-    return count
-
+    return print("total count notes :  " ,count)
 
 if __name__ == "__main__":
     cash = vending_machine(70)
-    print(cash)
