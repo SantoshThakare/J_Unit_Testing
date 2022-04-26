@@ -13,7 +13,7 @@ change and second list of Rs Notes that would given in the Change
 
 """
 
-def vending_machine(amount):
+def vending_machine_(amount):
 
     list1 = [1000, 500, 100, 50, 20, 10, 5, 2, 1]
 
@@ -30,7 +30,7 @@ def vending_machine(amount):
         else:
             note += 1
 
-    return print("total count notes :  " ,count)
+    return count
 
-if __name__ == "__main__":
-    cash = vending_machine(70)
+# if __name__ == "__main__":
+    # cash = vending_machine(70)

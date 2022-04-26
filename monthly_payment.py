@@ -1,19 +1,14 @@
 import math
 
 
-def monthly_payment():
-    year = float(input("Enter year: "))
-    principle = float(input("Enter Principle amount: "))
-    rate_of_interest = float(input("Enter Rate of Interest: "))
+def monthly_payment_(principal_loan, year, rate):
+
     n = 12 * year
-    r = (rate_of_interest / 12) * 100
-    num = principle * r
-    den = 1 - math.pow(1 + r, -n)
-    payment = num / den
-    print(f"Payment is {payment}")
+    r = rate/(12 * 100)
+    payment = (principal_loan * r) / 1 - math.pow((1 + r), -n)
+    return round(payment, 3)
 
 
-
-if __name__=='__main__':
-
- monthly_payment()
+if __name__ == "__main__":
+    amount_required = monthly_payment_(50000, 3 , 6)
+    print(amount_required)

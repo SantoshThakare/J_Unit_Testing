@@ -18,8 +18,8 @@ class TemperatureConversion:
             cel = (fahr - 32) * 5.0/9.0
             print(f"{fahr} fahrenheit is {cel} celsius")
 
-
 temp = TemperatureConversion()
+
 
 if __name__ == '__main__':
 
