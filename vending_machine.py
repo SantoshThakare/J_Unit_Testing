@@ -32,5 +32,5 @@ def vending_machine_(amount):
 
     return count
 
-# if __name__ == "__main__":
-    # cash = vending_machine(70)
+if __name__ == "__main__":
+    cash = vending_machine(70)

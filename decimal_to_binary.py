@@ -9,7 +9,5 @@ class DecimalToBinary:
 if __name__ == '__main__':
 
     dec_val = int(input("Enter number :"))
-
-con = DecimalToBinary()
-
-con.dec_to_bin(dec_val)
+    con = DecimalToBinary()
+    con.dec_to_bin(dec_val)

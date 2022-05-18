@@ -1,7 +1,7 @@
 import math
 
-def square_root(number):
 
+def square_root(number):
     return round(math.sqrt(number))
 
 
